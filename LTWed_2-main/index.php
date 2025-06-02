@@ -26,33 +26,34 @@ include_once('cauhinh/ketnoi.php');
         <!-- TOP BAR -->
         <div id="head-container">
             <!-- Logo -->
-            <div><a href="index.php"><img class="logo-img" src="quantri/anh/logo_bieutuong.png" alt=""></a></div>
+            <div class="contai">
+                <div><a href="index.php"><img class="logo-img" src="quantri/anh/logo_bieutuong.png" alt=""></a></div>
 
-            <!-- Search -->
-            <div id="search-bar">
-                <?php include_once('chucnang/timkiem/timkiem.php'); ?>
-            </div>
-
-            <!-- Auth + Mạng xã hội + Giỏ hàng -->
-            <div class="auth-container">
-                <?php if (isset($_SESSION['username'])): ?>
-                    <p>Xin chào, <?php echo htmlspecialchars($_SESSION['username']); ?>!</p>
-                    <a href="logout.php" class="auth-link">Đăng xuất</a>
-                <?php else: ?>
-                    <a href="login.php" class="auth-link"><i class='bx bxs-user-circle'></i></a>
-                <?php endif; ?>
-
-                <div class="logo-fb"><i class='bx bxl-facebook-circle'></i></div>
-                <div class="logo-tiktok"><a href="https://www.tiktok.com/@tqtuan295?lang=vi-VN"><i class='bx bxl-tiktok'></i></a></div>
-
-                <div id="logo">
-                    <a href="index.php"><img width="50px" height="40px" src="quantri/anh/giohang.jpg" /></a>
+                <!-- Search -->
+                <div id="search-bar">
+                    <?php include_once('chucnang/timkiem/timkiem.php'); ?>
                 </div>
 
-                <?php include_once('chucnang/giohang/giohangcuaban.php'); ?>
+                <!-- Auth + Mạng xã hội + Giỏ hàng -->
+                <div class="auth-container">
+                    <?php if (isset($_SESSION['username'])): ?>
+                        <p>Xin chào, <?php echo htmlspecialchars($_SESSION['username']); ?>!</p>
+                        <a href="logout.php" class="auth-link">Đăng xuất</a>
+                    <?php else: ?>
+                        <a href="login.php" class="auth-link"><i class='bx bxs-user-circle'></i></a>
+                    <?php endif; ?>
+
+                    <div class="logo-fb"><i class='bx bxl-facebook-circle'></i></div>
+                    <div class="logo-tiktok"><a href="https://www.tiktok.com/@tqtuan295?lang=vi-VN"><i class='bx bxl-tiktok'></i></a></div>
+
+                    <div id="logo">
+                        <a href="index.php"><img width="50px" height="40px" src="quantri/anh/giohang.jpg" /></a>
+                    </div>
+
+                    <?php include_once('chucnang/giohang/giohangcuaban.php'); ?>
+                </div>
             </div>
         </div>
-
         <!-- NAVIGATION BAR -->
         <nav class="navbar navbar-expand">
             <ul>

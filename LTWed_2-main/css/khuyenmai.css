@@ -4,11 +4,8 @@
 }
 .prd-block h2 {
   margin-left: 5px;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: rgb(223, 166, 92);
+  color: #23a534;
   padding: 5px;
-  color: rgb(23, 97, 194);
 }
 .prd-list {
   display: flex;

@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../../css/khuyenmai.css">
-<div class="pr-block">
+<div class="prd-block">
     <h2>Sản phẩm khuyến mãi</h2>
     <div class="prd-list">
         <?php
